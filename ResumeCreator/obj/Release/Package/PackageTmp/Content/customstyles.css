@@ -1,0 +1,31 @@
+
+.tabs .tab a {
+  color: #fefffe;
+  /*Custom Text Color*/
+}
+
+.tabs .tab a:hover {
+  color:white;
+  /*Custom Color On Hover*/
+}
+
+.tabs .tab a:focus.active {
+  color:white;
+  /*Custom Text Color While Active*/
+  
+  /*Custom Background Color While Active*/
+}
+
+.tabs .indicator {
+  background-color:white;
+  /*Custom Color Of Indicator*/
+}
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

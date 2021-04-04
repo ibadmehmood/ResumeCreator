@@ -1,0 +1,148 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+
+    <link rel="stylesheet" href="~/Content/customstyles.css">
+</head>
+<body style="position: relative;">
+    @Html.Partial("NavBar")
+
+    <ul class="tabs tabs-fixed-width   teal darken-1">
+        <li class="tab disabled"><a style="color:#cfd1cc">PERSONAL INFO</a></li>
+        <li class="tab "><a style="color:#fefffe" class="active hover focus">EXPERIENCE</a></li>
+        <li class="tab disabled"><a style="color:#cfd1cc">EDUCATION</a></li>
+        <li class="tab disabled"><a style="color:#cfd1cc ">SKILLS</a></li>
+        <li class="tab disabled"><a style="color:#cfd1cc">SUMMARY</a></li>
+        <li class="tab disabled"><a style="color:#cfd1cc">REVIEW & DOWNLOAD</a></li>
+    </ul>
+
+    <!--page content-->
+    <div class="container" style="margin-top:30px;">
+        <div id="test1" class="col s12">
+            <div class="row">
+                
+                    <div class="row">
+                        <div class="col s12">
+                            <span style="font-size:1.6em">COMPLETE YOUR</span><span style="font-size:1.6em;font-weight:bold;"> RESUME HEADING</span>
+                            <p style="font-size:1.3em">Employers will use this information to contact you.</p>
+                        </div>
+                    </div>
+                    <form method="post" action="/Resume/Experience">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                @Html.AntiForgeryToken()
+                                <input id="resumeid" type="hidden" name="resumeid" value="@ViewBag.resumeid" >
+                                <input id="employer" name="employer" type="text" class="validate">
+                                <label for="employer">Employer</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="job_title" name="job_title" type="text" class="validate">
+                                <label for="job_title">Job title</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="city" name="city" type="text" class="validate">
+                                <label for="city">City</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="state" name="state" type="text" class="validate">
+                                <label for="state">State</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" class="datepicker" name="start_date" id="start_date">
+
+                                <label for="start_date">Start Date</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" class="datepicker" name="end_date" id="end_date">
+                                <label for="end_date">End Date</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="description" class="materialize-textarea" name="description"></textarea>
+                                <label for="description">Description</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+
+
+                            <div class="col s4 ">
+
+                                <a class="waves-effect waves-light btn-large">BACK</a>
+                            </div>
+
+                            <div class="col s4 offset-s4 right-align">
+
+                                <button class="waves-effect waves-light btn-large" type="submit">SAVE & NEXT</button>
+                            </div>
+                        </div>
+                    </form>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- end of page content-->
+    <div class="" style="margin-top: 30px;font-size: 1.6em;">
+        <div class="container">
+            <div class="row">
+                <div class="col " style="color:black;">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="" style="margin-top:30px;">
+        <footer class="page-footer teal darken-1" style="position: absolute;bottom: 0;left:0;right:0;">
+            <div class="container ">
+                <div class="row teal darken-1">
+                    <div class="footer-copyright teal darken-1">
+                        <div class="container teal darken-1" style="color:#ffff">
+                            © QuickResume 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+
+    //var instance = M.Tabs.init(el, options);
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+        $('.tabs').tabs();
+        $('.datepicker').datepicker();
+        $(".dropdown-trigger").dropdown();
+    });
+</script>
+</html>
+
+
+
+
+

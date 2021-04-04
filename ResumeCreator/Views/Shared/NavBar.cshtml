@@ -1,0 +1,40 @@
+﻿<nav class="pushpin-demo-nav" data-target="blue">
+    <div class="nav-wrapper   teal darken-1">
+        <div class="container">
+            <a href="#" class="brand-logo">QuickResume</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                @{
+                    if (User.Identity.IsAuthenticated)
+                    {
+                        <form method="post" action="/Account/LogOff">
+                            @Html.AntiForgeryToken()
+                            <li style="margin-right:5px;">Hello,@User.Identity.Name !</li>
+                            
+                            <li><button type="submit" class="waves-effect waves-light btn-large blue accent-4" value="Logout">Logout</button></li>
+                            
+
+                        </form>
+
+
+                    }
+                    else
+                    {
+                        
+                        <li><a href="/Account/Register">Register</a></li>
+                        <li><a href="/Account/Login">Login</a></li>
+
+                    }
+
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<ul id="dropdown1" class="dropdown-content">
+    
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+</ul>
+

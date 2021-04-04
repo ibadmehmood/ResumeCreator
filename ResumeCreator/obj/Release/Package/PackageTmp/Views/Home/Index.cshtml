@@ -1,0 +1,77 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body style="position: relative;">
+  @Html.Partial("NavBar")
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align" style="margin-top:50px;margin-bottom: 50px;">
+                <h4 style="color:#898989;">ONLINE RESUME BUILDER</h4>
+                <h1>Create your professional resume in 15 minutes</h1>
+                <a class="waves-effect waves-light btn-large" href="/Resume/Index">Build My Resume Now</a>
+
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col s12">
+                <img class="responsive-img" src="~/Images/r.png">
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer teal darken-1" style="position: absolute;bottom: 0;left:0;right:0;">
+        <div class="container ">
+            <div class="row teal darken-1">
+                <div class="footer-copyright teal darken-1">
+                    <div class="container teal darken-1" style="color:#ffff">
+                        © QuickResume 2019
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+
+    //var instance = M.Tabs.init(el, options);
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+        $('.tabs').tabs();
+       
+        $(".dropdown-trigger").dropdown();
+    });
+</script>
+</html>
+
+
+
+

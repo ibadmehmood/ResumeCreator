@@ -1,0 +1,229 @@
+﻿@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+<head>
+    <style>
+        * {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+            font-size: 1em;
+        }
+
+        body {
+            width: 210mm;
+            height: 297mm;
+            border: 1px solid black;
+            padding: 5mm;
+            /* to centre page on screen*/
+        }
+
+        .icon-color {
+            color: white;
+        }
+
+        .pagelayout {
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        .personalinfo:hover {
+            border: 1px solid #00897b;
+        }
+
+            .personalinfo:hover .personalinfoedit {
+                visibility: visible;
+            }
+
+        .personalinfoedit {
+            visibility: hidden;
+        }
+
+            .personalinfoedit:hover .icon-color {
+                color: black;
+            }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+
+
+</head>
+<body>
+    <div class="row pagelayout">
+        <!--Personal Info-->
+        <div class="col s12 personalinfo" style="position:relative;">
+            <span class="right-align personalinfoedit" style="position:absolute;top:0;right:0;background-color:#00897b;padding:5px;"> <a href="#!"><i class="material-icons icon-color">edit</i></a></span>
+            <h2>IBAD ULLAH <span class="right-align"> </h2>
+            <div class="info-item" style="margin-top:5px;">
+                <span class="info-label" style="font-weight:bold;">
+                    Phone:
+                </span>
+                <span class="info-text" style="margin-left:35px;">(000) 000-0000</span>
+            </div>
+
+            <div class="info-item" style="margin-top:5px;">
+                <span class="info-label" style="font-weight:bold;">
+                    Email:
+                </span>
+                <span class="info-text" style="margin-left:35px;">
+                    ibadkhogyani@gmail.com
+                </span>
+            </div>
+
+            <div class="info-item" style="margin-top:5px;">
+                <span class="info-label" style="font-weight:bold;">
+                    Address:
+                </span>
+                <span class="info-text" style="margin-left:30px;">
+                    Gulbabar # 3,Rasheed Town., Peshawar, KPK 25000
+                </span>
+            </div>
+
+        </div>
+
+        <!--EndOFPersonalInfo-->
+        <!--ProfessionalSummary-->
+        <div class="col s12 personalsummary">
+            <h4 style="background-color:#C2C2C2;padding:10px;color:#283648;">PROFESSIONAL SUMMARY</h4>
+            <div>
+                <div>
+                    <div>Hands-on, successful Software Engineer with decades of verifiable success leading teams in delivering appropriate technology solutions for desktop and mobile products.&nbsp; Comprehensive knowledge of platform development, enterprise architecture, agile methodologies, cloud services, and web-based applications.&nbsp; Innovative change agent with a unique mix of high-level technology direction and deep technical expertise.</div>
+                </div>
+            </div>
+        </div>
+        <!--ProfessionalSummaryEnd-->
+        <!--Employment-->
+        <div class="col s12 employment">
+            <h4 style="background-color:#C2C2C2;color:#283648;padding:10px;">EMPLOYMENT HISTORY</h4>
+            <div class="row">
+                <div class="col s4 right-align" style="padding-right:20px;">
+                    <div class="info-label" style="font-weight:bold;">
+                        Jan. 2016 – Feb. 2017
+                    </div>
+                    <div class="info-label" style="font-weight:bold;">
+                        Peshawar,KPK
+                    </div>
+                </div>
+                <div class="col s8 " style="border-left:1px solid lightgrey;padding-left:20px;">
+                    <div class="info-label" style="font-weight:bold;">
+                        Sr Software Engineer
+                    </div>
+                    <div class="info-label" style="font-weight:normal;margin-top:8px;">
+                        Communicate with staff or clients to understand specific system requirements.
+                        Develop or approve project plans, schedules, or budgets.
+                        Develop system engineering, software engineering, system integration, or distributed system architectures.
+                        Perform security analyses of developed or packaged software components.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Employment-->
+        <!--Education-->
+        <div class="col s12 education">
+            <h4 style="background-color:#C2C2C2;color:#283648;padding:10px;">EDUCATION</h4>
+            <div class="row">
+                <div class="col s4 right-align" style="padding-right:20px;">
+                    <div class="info-label" style="font-weight:bold;">
+                        Present
+                    </div>
+
+                </div>
+                <div class="col s8 " style="border-left:1px solid lightgrey;padding-left:20px;">
+                    <div class="info-label" style="font-weight:bold;">
+                        Bachelors of Science in Computer Science: Computer Science
+
+                    </div>
+                    <div class="info-label" style="font-weight:normal;margin-top:8px;">
+                        University of Engineering and Technology - Peshawar, KPK
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col s4 right-align" style="padding-right:20px;">
+                    <div class="info-label" style="font-weight:bold;">
+                        Jan. 2016
+                    </div>
+
+                </div>
+                <div class="col s8 " style="border-left:1px solid lightgrey;padding-left:20px;">
+                    <div class="info-label" style="font-weight:bold;">
+                        Masters of Science in Software Engineering: Software Engineering
+
+                    </div>
+                    <div class="info-label" style="font-weight:normal;margin-top:8px;">
+                        Abasyn University Peshawar - Peshawar, KPK
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--Education-->
+        <!--Skill-->
+        <div class="col s12 skill">
+            <h4 style="background-color:#C2C2C2;color:#283648;padding:10px;">SKILL</h4>
+            <div class="row">
+                <div class="col s6 right-align" style="">
+                    <div style="display:block;margin-bottom:12px;" class="col s12">
+                        <span class="left-align" style="float:left">C#</span>
+                        <span class="right-align" style="float:right">Experienced</span>
+                    </div>
+                    <div style="display:block;" class="col s12">
+                        <span class="left-align" style="float:left">PHP</span>
+                        <span class="right-align" style="float:right">Expert</span>
+                    </div>
+
+                </div>
+                <div class="col s6 " style="border-left:1px solid lightgrey;">
+                    <div style="display:block;margin-bottom:12px;" class="col s12">
+                        <span class="left-align" style="float:left">Java</span>
+                        <span class="right-align" style="float:right">Skillful</span>
+                    </div>
+                    <div style="display:block;" class="col s12">
+                        <span class="left-align" style="float:left">NODEJS</span>
+                        <span class="right-align" style="float:right">Expert</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Skill-->
+        <!--Skill-->
+        <!--Skill-->
+
+
+
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+
+    //var instance = M.Tabs.init(el, options);
+
+    // Or with jQuery
+
+
+</script>
+<style>
+   
+</style>
+</html>
+
+
+
+
+
+
