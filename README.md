@@ -6,6 +6,7 @@ Resume Creator lets you build awesome resumes in minutes .
   <li>C#</>
   <li>Asp.net MVC</>
   <li>Sql Server</>
+  <li>Entity Framework</li>
   <li>Materialize Css</>
   </ul>
   
